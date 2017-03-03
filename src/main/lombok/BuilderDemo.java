@@ -6,6 +6,9 @@ import lombok.Singular;
 @Data
 @Builder(toBuilder = true)
 public class BuilderDemo {
+
+    private final Set<String> names;
+
     @Singular
-    private Set<String> names;
+    private final Set<String> singularNames;
 }
